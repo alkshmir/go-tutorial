@@ -62,7 +62,7 @@ func main() {
 	u2 := new(User)
 
 	// Unmarshal Jsonを構造体に変換
-	if err := json.Unmarshal(bs, &u2); err != nil {
+	if err := json.Unmarshal(bs, u2); err != nil {
 		fmt.Println(err)
 	}
 	fmt.Println(u2)
